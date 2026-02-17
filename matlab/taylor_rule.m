@@ -19,7 +19,7 @@ end
 
 r = phi_pi * (pi + mpi) + phi_y * (y + my);
 
-% Optional extra policy shock (if you add one later)
+% Extra policy shock
 if isfield(cfg, 'policy') && isfield(cfg.policy, 'shock_index')
     idx = cfg.policy.shock_index;
     if idx >= 1 && idx <= numel(e_t)
