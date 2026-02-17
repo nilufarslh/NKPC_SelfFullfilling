@@ -48,7 +48,7 @@ cfg.params.fixed.theta_y = 1.00;
 cfg.params.fixed.rho_my = 0.00;
 cfg.params.fixed.rho_mpi = 0.00;
 
-% Estimated parameters (edit to match your model)
+% Estimated parameters
 cfg.params.estimated.names = {
     'kappa', 'theta_r', ...
     'rho_d', 'rho_v', ...
