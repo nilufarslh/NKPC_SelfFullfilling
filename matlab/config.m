@@ -33,7 +33,7 @@ cfg.moments.acf_lag = 12;
 % ----------------------------
 % Weighting matrix
 % ----------------------------
-% Start with identity; you can replace with optimal W later.
+% Start with identity
 cfg.weighting.W = [];  % if empty, set to identity at runtime
 
 % ----------------------------
