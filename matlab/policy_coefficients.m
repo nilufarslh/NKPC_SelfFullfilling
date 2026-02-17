@@ -23,7 +23,7 @@ Vpi = max(Vpi, eps_d);
 % phi_y = gamma * Vd / Vy
 phi_y = params.gamma * Vd / Vy;
 
-% phi_pi(k_hat) from the i.i.d. "simple case"
+% phi_pi(k_hat) from the i.i.d.
 lam = params.lambda_y;
 
 inner = lam * Vv + (lam + k_hat^2) * Vpi;
