@@ -20,11 +20,11 @@ cfg.series.gdp = 'GDPC1';
 cfg.series.pot = 'GDPPOT';
 cfg.series.ffr = 'FEDFUNDS';
 
-% Sample window (empty end_date uses latest available)
+% Sample window 
 cfg.start_date = '1984-01-01';
 cfg.end_date = '';
 
-% Quarterly aggregation for monthly series: 'mean' or 'eop'
+% Quarterly aggregation for monthly series
 cfg.cpi_quarter_method = 'mean';
 cfg.rate_quarter_method = 'mean';
 
