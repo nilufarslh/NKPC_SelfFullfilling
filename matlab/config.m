@@ -14,7 +14,7 @@ cfg.sample.moment_lag = 1;         % lag L for autocorr/cov moments
 cfg.sample.burn_in = 200;          % burn-in for simulation
 cfg.sample.T = [];                 % if empty, use data length
 
-% Data file (set in main.m; this is a placeholder relative path)
+% Data file
 cfg.data.path = fullfile('data', 'targets.csv');
 
 % ----------------------------
