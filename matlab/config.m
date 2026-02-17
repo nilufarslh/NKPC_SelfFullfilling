@@ -98,7 +98,7 @@ cfg.learning.k_bounds = [-5.0, 5.0];
 % ----------------------------
 % Reduced form mapping
 % ----------------------------
-% Uses the row-by-row formulas from Equation (11).
+% Row-by-row formulas from Equation (11).
 cfg.reduced_form.fn = @reduced_form_default;
 
 % ----------------------------
