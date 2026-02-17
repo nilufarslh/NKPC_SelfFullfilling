@@ -18,13 +18,13 @@ pi = T.pi;
 y = T.y;
 r = T.r;
 
-% Annualize if requested (quarterly rate * 4)
+% Annualize (quarterly rate * 4)
 if cfg.sample.annualize
     pi = 4 * pi;
     r = 4 * r;
 end
 
-% Demean if requested
+% Demean 
 if cfg.sample.demean
     pi = pi - mean(pi, 'omitnan');
     y = y - mean(y, 'omitnan');
