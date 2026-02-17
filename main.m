@@ -6,22 +6,21 @@ addpath(fullfile(root, 'matlab'));
 
 cfg = config();
 
-% Resolve paths relative to project root
 cfg.project_root = root;
 if ~isfile(cfg.data.path)
     cfg.data.path = fullfile(root, cfg.data.path);
 end
 
-% Step 1: Build data series (targets)
+% Build data series (targets)
 [data, data_info] = load_data(cfg);
 if isempty(cfg.sample.T)
     cfg.sample.T = data_info.T;
 end
 
-% Step 2: Choose moments to match
+% Choose moments to match
 [data_moments, moment_names] = moments_data(data.X, cfg);
 
-% Step 3: Define parameter partition
+% Define parameter partition
 [theta0, lb, ub, param_names] = pack_params(cfg);
 
 % Weighting matrix
