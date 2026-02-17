@@ -1,6 +1,6 @@
 function cfg = config()
 %CONFIG Configuration for SMM estimation with learning NK model.
-%   Adjust values in this file to match your model and data choices.
+
 
 cfg = struct();
 
